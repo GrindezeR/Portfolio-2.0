@@ -1,0 +1,87 @@
+@import '../../../common/styles/variables.sass';
+
+
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 20px;
+  gap: 10px;
+  //border: 1px solid red;
+  color: #fff;
+
+  .bullet {
+    display: block;
+    border: 2px solid #2196F3;
+    background: #222;
+    height: 15px;
+    left: -41px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+    border-radius: 50%;
+  }
+
+  .bulletEnd {
+    display: block;
+    border: 2px solid #2196F3;
+    background: #222;
+    height: 15px;
+    left: -21px;
+    position: absolute;
+    top: 95px;
+    width: 15px;
+    border-radius: 50%;
+  }
+
+  .years {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: $secondaryFont;
+    font-size: 13px;
+    opacity: .8;
+    font-weight: 400;
+
+    .iconYear {
+      width: 15px;
+      height: 12px;
+      margin: 3px 0;
+    }
+  }
+
+  .title {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 16px;
+
+    .separator {
+      display: inline-block;
+      width: 10px;
+      background: #555;
+      height: 2px;
+      margin: 0 7px 3px 7px;
+      vertical-align: middle;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: $primaryFont;
+    }
+
+    .name {
+      font-family: $primaryFont;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  .textWrapper {
+    .text {
+
+    }
+  }
+}

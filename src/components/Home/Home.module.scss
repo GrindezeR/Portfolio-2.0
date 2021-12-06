@@ -1,0 +1,84 @@
+@import '../../common/styles/variables';
+
+.about_wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+  &:before {
+    content: '';
+    background-size: cover;
+    background: url('../../common/images/background.jpg') no-repeat center center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 300px;
+    gap: 50px;
+    z-index: 1;
+
+    .photoContainer {
+      max-width: 550px;
+      border: 10px solid rgba(255, 255, 255, .1);
+      border-radius: 50%;
+
+      .photo {
+        width: 300px;
+        height: 300px;
+        background: url('../../common/images/time_photo.jpg') center no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .textContainer {
+      font-family: $primaryFont;
+      color: #eee;
+
+      .greetings {
+        font-weight: 400;
+        font-size: 19px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .nameContainer {
+        font-size: 42px;
+        line-height: 42px;
+        font-weight: 500;
+        margin: 19px 0 10px;
+
+        .myName {
+          color: $secondaryTextColor;
+          font-weight: 700;
+        }
+      }
+
+      .aboutText {
+        display: block;
+        margin: 11px 0 23px;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+        font-family: $secondaryFont;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
+
+.wrapper {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 75%;
+  margin: 50px 0;
+
+
+  // HEADER PAGE
+  .header {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 12px;
+    margin-bottom: 50px;
+
+    .title {
+      color: #fff;
+      font-family: $primaryFont;
+      font-size: 55px;
+      font-weight: 900;
+
+      .specialText {
+        color: $secondaryTextColor;
+      }
+    }
+
+    .titleText {
+      position: relative;
+      color: #fff;
+      opacity: .8;
+      font-family: $secondaryFont;
+      font-size: 15px;
+
+      &:after {
+        @include aboutTitleLines;
+        left: 435px;
+      }
+
+      &:before {
+        @include aboutTitleLines;
+        right: 435px;
+      }
+    }
+  }
+
+  // MAIN BLOCK
+  .main {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+
+    .myPhoto {
+      position: relative;
+      width: 440px;
+      height: 440px;
+      background: url('../../common/images/time_photo.jpg') center no-repeat;
+      background-size: cover;
+
+      &:before {
+        border: 6px solid #2196F3;
+        border-left: none;
+        border-top: none;
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        //z-index: -1;
+        transform: translate3d(26px, 26px, -26px);
+      }
+    }
+
+    .aboutMe {
+      display: flex;
+      flex-direction: column;
+
+      .list {
+        display: flex;
+        margin: 50px 0;
+        gap: 50px;
+
+        .block {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          font-family: $secondaryFont;
+          font-weight: 500;
+          font-size: 16px;
+
+          .listName {
+            color: #fff;
+            opacity: .8;
+            font-weight: 400;
+          }
+
+          .listValue {
+            color: #fff;
+          }
+        }
+      }
+
+      .downloadButton {
+        position: relative;
+        height: 40px;
+        border-radius: 50px;
+        width: 250px;
+        background-color: $secondaryTextColor;
+        text-transform: uppercase;
+        font-family: $primaryFont;
+        font-size: 15px;
+        line-height: 46px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        transition: .3s ease;
+
+        &:hover {
+          background-color: gray;
+        }
+
+        .iconBtn {
+          position: absolute;
+          left: 35px;
+          top: 3px;
+        }
+
+        .link {
+          position: absolute;
+          left: 20px;
+          bottom: 3px;
+          color: #fff;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .lineDelimiter {
+    margin: 72px auto 50px;
+    background-color: #555;
+    opacity: .1;
+  }
+
+
+  // EXPERIENCE
+  .experience {
+    display: flex;
+    justify-content: space-around;
+    //border: 1px solid red;
+
+
+    & h2 {
+      text-align: left;
+      color: #fff;
+      font-size: 23px;
+      font-family: $primaryFont;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 50px;
+    }
+
+    .blockExp {
+
+      .works {
+        position: relative;
+
+        &:before {
+          content: '';
+          height: 100%;
+          left: -14px;
+          opacity: .6;
+          position: absolute;
+          border-left: 1px solid $secondaryTextColor;
+        }
+      }
+      //border: 1px solid white;
+    }
+
+    //.BlockRight {
+    //  //border: 1px solid white;
+    //}
+  }
+
+}
+
+
+
+
+
