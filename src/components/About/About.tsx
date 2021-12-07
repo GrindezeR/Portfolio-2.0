@@ -1,24 +1,25 @@
 import React from "react";
 import s from './About.module.scss';
 import sc from '../../common/styles/common.module.css';
-import donwloadIcon from '../../common/images/downloadIcon.png'
+import downloadIcon from '../../common/images/downloadIcon.png'
 import {ExperienceElement} from "./Experience/ExperienceElement";
 import {data} from '../../common/data/data';
+import {Title} from "../Title/Title";
+import {Skills} from "./Skill/Skills";
+import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons/faTelegramPlane";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDownload} from "@fortawesome/free-solid-svg-icons/faDownload";
 
 export const About = () => {
     return (
         <div className={sc.container}>
             <div className={s.wrapper}>
-                <div className={s.header}>
-                    <h1 className={s.title}>
-                        ABOUT <span className={s.specialText}>ME</span>
-                    </h1>
-                    <span className={s.titleText}>I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.</span>
-                </div>
+                <Title title={'ABOUT'}
+                       specialText={'ME'}
+                       aboutText={'I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.'}/>
 
                 <div className={s.main}>
                     <div className={s.myPhoto}/>
-
                     <div className={s.aboutMe}>
                         <div className={s.list}>
                             <div className={s.block}>
@@ -32,25 +33,25 @@ export const About = () => {
                                 </div>
                                 <div>
                                     <span className={s.listName}>Birthdate: </span>
-                                    <span className={s.listValue}>17 august 1993</span>
+                                    <span className={s.listValue}>{data.about.birthdate}</span>
                                 </div>
 
                                 <div>
                                     <span className={s.listName}>Address: </span>
-                                    <span className={s.listValue}>Saint-Petersburg</span>
+                                    <span className={s.listValue}>{data.about.city}</span>
                                 </div>
                                 <div>
                                     <span className={s.listName}>Phone: </span>
-                                    <span className={s.listValue}>+7 999 999 99 99</span>
+                                    <span className={s.listValue}>{data.about.phone}</span>
                                 </div>
                                 <div>
                                     <span className={s.listName}>Email: </span>
-                                    <span className={s.listValue}>valariot@gmail.com</span>
+                                    <span className={s.listValue}>{data.about.email}</span>
                                 </div>
                                 <div>
                                     <span className={s.listName}>Telegram: </span>
                                     <span className={s.listValue}>
-                                        <a rel={'noreferrer'} href="https://t.me/GrindezeR" target={'_blank'}>
+                                        <a rel={'noreferrer'} href={data.about.telegram} target={'_blank'}>
                                             GrindezeR
                                         </a>
                                     </span>
@@ -74,7 +75,7 @@ export const About = () => {
                                     <span className={s.listName}>CodeWars: </span>
                                     <span className={s.listValue}>
                                         <a rel={'noreferrer'}
-                                           href="https://www.codewars.com/users/GrindezeR"
+                                           href={data.about.codewars}
                                            target={'_blank'}>
                                             Profile
                                         </a>
@@ -83,7 +84,7 @@ export const About = () => {
                                 <div>
                                     <span className={s.listName}>LinkedIn: </span>
                                     <span className={s.listValue}>
-                                        <a href="https://www.linkedin.com/in/stanislav-tsarkov-b9a0b3218/">
+                                        <a href={data.about.linkedIn}>
                                             Profile
                                         </a>
                                     </span>
@@ -91,7 +92,7 @@ export const About = () => {
                                 <div>
                                     <span className={s.listName}>GitHub: </span>
                                     <span className={s.listValue}>
-                                        <a rel={'noreferrer'} href='https://github.com/GrindezeR'
+                                        <a rel={'noreferrer'} href={data.about.gitHub}
                                            target={'_blank'}>
                                             Repositories
                                         </a>
@@ -101,12 +102,12 @@ export const About = () => {
                         </div>
                         <div className={s.downloadButton}>
                             <div className={s.iconBtn}>
-                                <img src={donwloadIcon} width={'18px'} alt={'icon'}/>
+                                {/*<img src={downloadIcon} width={'18px'} alt={'icon'}/>*/}
+                                <FontAwesomeIcon icon={faDownload}/>
                             </div>
                             <a className={s.link} rel={'noreferrer'} href="/">Download my CV</a>
                         </div>
                     </div>
-
                 </div>
 
                 <hr className={s.lineDelimiter}/>
@@ -131,8 +132,12 @@ export const About = () => {
                     </div>
                 </div>
 
-                {/*<div className={s.skills}>*/}
-                {/*</div>*/}
+                <div className={s.skills}>
+                    <h2>SKILLS</h2>
+                    <div className={s.skillsWrapper}>
+                        <Skills skills={data.skills}/>
+                    </div>
+                </div>
 
             </div>
         </div>

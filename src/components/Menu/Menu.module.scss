@@ -24,12 +24,21 @@
     display: none;
     list-style: none;
 
-    .homeIconWrapper, .skillsIconWrapper, .contactsIconWrapper {
-      margin: 20px 0;
+    .homeIconWrapper, .skillsIconWrapper, .contactsIconWrapper,  .portfolioIconWrapper{
+      margin: 26px 0;
       user-select: none;
+
+      .menuIcon {
+        width: 25px;
+        height: 18px;
+
+        &:hover {
+          color: #2196F3;
+        }
+      }
     }
 
-    .home, .skills, .contacts {
+    .home, .about, .contacts, .portfolio {
       color: $primaryTextColor;
       position: absolute;
       font-family: $primaryFont;
@@ -42,7 +51,7 @@
     display: block;
 
     .showNav {
-      &.home, &.skills, &.contacts {
+      &.home, &.about, &.contacts, &.portfolio {
         left: 80px;
         transition: .5s ease;
       }
@@ -56,34 +65,35 @@
   }
 
 
-
   .home {
-    top: 66px;
+    top: 67px;
 
     &:hover ~ .homeIconWrapper:after {
-      @include menuLineHover;
+      @include menuLinesHover;
     }
-
-    //&:hover ~ .homeIconWrapper {
-    //  border-radius: 10px;
-    //  background-color: #2196F3;
-    //  border: 2px solid #2196F3;
-    //}
   }
 
-  .skills {
-    top: 115px;
+  .about {
+    top: 114px;
 
     &:hover ~ .skillsIconWrapper:after {
-      @include menuLineHover;
+      @include menuLinesHover;
     }
   }
 
   .contacts {
-    top: 163px;
+    top: 160px;
 
     &:hover ~ .contactsIconWrapper:after {
-      @include menuLineHover;
+      @include menuLinesHover;
+    }
+  }
+
+  .portfolio {
+    top: 207px;
+
+    &:hover ~ .portfolioIconWrapper:after {
+      @include menuLinesHover;
     }
   }
 
@@ -91,7 +101,7 @@
 }
 
 .change.container {
-  height: 220px;
+  height: 265px;
   transition: .3s ease;
 }
 

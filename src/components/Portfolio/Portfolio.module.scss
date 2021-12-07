@@ -1,0 +1,28 @@
+@import '../../common/styles/variables';
+
+.wrapper {
+  width: 75%;
+  //border: 1px solid white;
+
+  .projectsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    .projects {
+      height: 198px;
+      width: 350px;
+      transition: 1s ease;
+      cursor: pointer;
+      background: url('http://slimhamdi.net/istanbul/demos/img/projects/project-1.jpg') no-repeat center;
+      background-size: cover;
+      //border: 1px solid red;
+
+      &:hover {
+        background-image: none;
+        background-color: $secondaryTextColor;
+      }
+    }
+  }
+}

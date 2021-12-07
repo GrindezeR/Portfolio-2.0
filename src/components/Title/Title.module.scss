@@ -1,0 +1,43 @@
+@import '../../common/styles/variables';
+@import '../../common/styles/mixins';
+
+// HEADER PAGE
+.header {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 12px;
+  align-items: center;
+
+  .title {
+    color: #fff;
+    font-family: $primaryFont;
+    font-size: 55px;
+    font-weight: 900;
+
+    .specialText {
+      color: $secondaryTextColor;
+    }
+  }
+
+  .titleText {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    color: #fff;
+    opacity: .8;
+    font-family: $secondaryFont;
+    font-size: 15px;
+
+    &:before {
+      @include aboutTitleLines;
+      left: -50px;
+    }
+
+    &:after {
+      @include aboutTitleLines;
+      right: -50px;
+    }
+  }
+}

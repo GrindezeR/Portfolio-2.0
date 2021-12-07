@@ -44,7 +44,7 @@
       color: #eee;
 
       .greetings {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 19px;
         font-family: 'Open Sans', sans-serif;
       }
@@ -52,12 +52,15 @@
       .nameContainer {
         font-size: 42px;
         line-height: 42px;
-        font-weight: 500;
         margin: 19px 0 10px;
+        text-transform: uppercase;
+        font-family: $primaryFont;
+        font-weight: 700;
+        word-spacing: 15px;
 
         .myName {
           color: $secondaryTextColor;
-          font-weight: 700;
+
         }
       }
 

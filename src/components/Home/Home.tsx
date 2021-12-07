@@ -12,9 +12,7 @@ export const Home = () => {
                 <div className={s.textContainer}>
                     <h3 className={s.greetings}>HI THERE!</h3>
                     <h3 className={s.nameContainer}>
-                        I'm <span className={s.myName}>
-                            Stanislav Tsarkov
-                        </span>
+                        I'm <span className={s.myName}>Stanislav Tsarkov</span>
                     </h3>
                     <span className={s.aboutText}>
                         Front-end developer who creating
