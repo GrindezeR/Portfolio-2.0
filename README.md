@@ -1,2 +1,2 @@
 # Github Pages
-https://grindezer.github.io/Partfolio-2.0/
+https://grindezer.github.io/Portfolio-2.0/

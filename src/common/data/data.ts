@@ -1,6 +1,6 @@
 export const data = {
     about: {
-        phone: '+7 999 986 16 36',
+        phone: '+7 999 999 99 99',
         email: 'valariot@gmail.com',
         vk: 'https://vk.com/grindezer',
         telegram: 'https://t.me/GrindezeR',
