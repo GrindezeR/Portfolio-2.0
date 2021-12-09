@@ -1,18 +1,22 @@
 import React from "react";
 import s from './About.module.scss';
-import sc from '../../common/styles/common.module.css';
-import downloadIcon from '../../common/images/downloadIcon.png'
+import sc from '../../common/styles/common.module.scss';
 import {ExperienceElement} from "./Experience/ExperienceElement";
 import {data} from '../../common/data/data';
 import {Title} from "../Title/Title";
 import {Skills} from "./Skill/Skills";
-import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons/faTelegramPlane";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload} from "@fortawesome/free-solid-svg-icons/faDownload";
+import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
 
-export const About = () => {
+type PropsType = {
+    homeCallback: () => void
+}
+
+export const About = ({homeCallback}: PropsType) => {
     return (
         <div className={sc.container}>
+            <HomeButton onClickHomeHandler={homeCallback}/>
             <div className={s.wrapper}>
                 <Title title={'ABOUT'}
                        specialText={'ME'}
@@ -21,91 +25,84 @@ export const About = () => {
                 <div className={s.main}>
                     <div className={s.myPhoto}/>
                     <div className={s.aboutMe}>
-                        <div className={s.list}>
-                            <div className={s.block}>
-                                <div>
-                                    <span className={s.listName}>First Name: </span>
-                                    <span className={s.listValue}>Stanislav</span>
+                        <div className={s.dataList}>
+                            <div className={s.dataBlock}>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>First Name:</span>
+                                    <span className={s.dataValue}>Stanislav</span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>Last Name: </span>
-                                    <span className={s.listValue}>Tsarkov</span>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Last Name:</span>
+                                    <span className={s.dataValue}>Tsarkov</span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>Birthdate: </span>
-                                    <span className={s.listValue}>{data.about.birthdate}</span>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Birthdate:</span>
+                                    <span className={s.dataValue}>{data.about.birthdate}</span>
                                 </div>
 
-                                <div>
-                                    <span className={s.listName}>Address: </span>
-                                    <span className={s.listValue}>{data.about.city}</span>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Address:</span>
+                                    <span className={s.dataValue}>{data.about.city}</span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>Phone: </span>
-                                    <span className={s.listValue}>{data.about.phone}</span>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Phone:</span>
+                                    <span className={s.dataValue}>{data.about.phone}</span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>Email: </span>
-                                    <span className={s.listValue}>{data.about.email}</span>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Email:</span>
+                                    <span className={s.dataValue}>{data.about.email}</span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>Telegram: </span>
-                                    <span className={s.listValue}>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Freelance: </span>
+                                    <span className={s.dataValue}>Not available</span>
+                                </div>
+                            </div>
+                            <div className={s.dataBlock}>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Telegram:</span>
+                                    <span className={s.dataValue}>
                                         <a rel={'noreferrer'} href={data.about.telegram} target={'_blank'}>
                                             GrindezeR
                                         </a>
                                     </span>
                                 </div>
-                            </div>
-
-                            <div className={s.block}>
-                                <div>
-                                    <span className={s.listName}>Freelance: </span>
-                                    <span className={s.listValue}>Not available</span>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>Language:</span>
+                                    <span className={s.dataValue}>
+                                        Russian, English (pre-intermediate in progress)
+                                    </span>
                                 </div>
-
-                                <div>
-                                    <span className={s.listName}>Language: </span>
-                                    <span className={s.listValue}>Russian, English</span>
-                                </div>
-                                <div>
-                                    <span className={s.listValue}>(pre-intermediate in progress)</span>
-                                </div>
-                                <div>
-                                    <span className={s.listName}>CodeWars: </span>
-                                    <span className={s.listValue}>
-                                        <a rel={'noreferrer'}
-                                           href={data.about.codewars}
-                                           target={'_blank'}>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>CodeWars:</span>
+                                    <span className={s.dataValue}>
+                                        <a rel={'noreferrer'} href={data.about.codewars} target={'_blank'}>
                                             Profile
                                         </a>
                                     </span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>LinkedIn: </span>
-                                    <span className={s.listValue}>
-                                        <a href={data.about.linkedIn}>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>LinkedIn:</span>
+                                    <span className={s.dataValue}>
+                                        <a rel={'noreferrer'} href={data.about.linkedIn} target={'_blank'}>
                                             Profile
                                         </a>
                                     </span>
                                 </div>
-                                <div>
-                                    <span className={s.listName}>GitHub: </span>
-                                    <span className={s.listValue}>
-                                        <a rel={'noreferrer'} href={data.about.gitHub}
-                                           target={'_blank'}>
+                                <div className={s.dataContainer}>
+                                    <span className={s.dataName}>GitHub:</span>
+                                    <span className={s.dataValue}>
+                                        <a rel={'noreferrer'} href={data.about.gitHub} target={'_blank'}>
                                             Repositories
                                         </a>
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div className={s.downloadButton}>
-                            <div className={s.iconBtn}>
-                                {/*<img src={downloadIcon} width={'18px'} alt={'icon'}/>*/}
+                        <div className={`${sc.btn} ${s.downloadButton}`}>
+                            <div className={sc.iconBtn}>
                                 <FontAwesomeIcon icon={faDownload}/>
                             </div>
-                            <a className={s.link} rel={'noreferrer'} href="/">Download my CV</a>
+                            <a className={sc.link} rel={'noreferrer'} href="/">Download my CV</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +111,7 @@ export const About = () => {
 
                 <div className={s.experience}>
                     <div className={s.blockExp}>
-                        <h2>EXPERIENCE</h2>
+                        <h2 className={s.chapterTitle}>EXPERIENCE</h2>
                         <div className={s.works}>
                             <ExperienceElement work={data.works.work1}/>
                             <ExperienceElement work={data.works.work2}/>
@@ -123,7 +120,7 @@ export const About = () => {
                     </div>
 
                     <div className={s.blockExp}>
-                        <h2>EDUCATION</h2>
+                        <h2 className={s.chapterTitle}>EDUCATION</h2>
                         <div className={s.works}>
                             <ExperienceElement educations={data.education.edu1}/>
                             <ExperienceElement educations={data.education.edu2}/>
@@ -133,10 +130,8 @@ export const About = () => {
                 </div>
 
                 <div className={s.skills}>
-                    <h2>SKILLS</h2>
-                    <div className={s.skillsWrapper}>
-                        <Skills skills={data.skills}/>
-                    </div>
+                    <h2 className={s.chapterTitle}>SKILLS</h2>
+                    <Skills skills={data.skills}/>
                 </div>
 
             </div>

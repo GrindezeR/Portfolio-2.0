@@ -3,21 +3,38 @@
 
 .wrapper {
   height: 100%;
-  min-height: 100vh;
-  width: 75%;
+  width: 65%;
+
+  @media (max-width: 1025px) {
+    width: 100%;
+  }
+
 
   // MAIN BLOCK
   .main {
     display: flex;
-    justify-content: center;
-    gap: 150px;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    //gap: 150px;
+
+    @media (max-width: 1290px) {
+      gap: 30px;
+      flex-direction: column;
+    }
 
     .myPhoto {
       position: relative;
-      width: 440px;
+      min-width: 440px;
       height: 440px;
       background: url('../../common/images/time_photo.jpg') center no-repeat;
       background-size: cover;
+
+      @media (max-width: 470px) {
+        width: 80%;
+        min-width: auto;
+        height: 250px;
+      }
 
       &:before {
         border: 6px solid #2196F3;
@@ -30,71 +47,64 @@
         right: 0;
         bottom: 0;
         left: 0;
-        //z-index: -1;
         transform: translate3d(26px, 26px, -26px);
+
+        //@media (max-width: 600px) {
+        //  display: none;
+        //}
       }
     }
 
     .aboutMe {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
-      .list {
+      @media (max-width: 620px) {
+        width: 100%;
+      }
+
+      .dataList {
         display: flex;
         margin: 50px 0;
         gap: 50px;
 
-        .block {
+        @media (max-width: 580px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .dataBlock {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          gap: 20px;
+          text-align: left;
+          gap: 10px;
           font-family: $secondaryFont;
           font-weight: 500;
           font-size: 16px;
 
-          .listName {
+          .dataContainer {
+            display: flex;
+            gap: 15px;
+          }
+
+          .dataName {
             color: #fff;
             opacity: .8;
             font-weight: 400;
           }
 
-          .listValue {
+          .dataValue {
+            display: inline-block;
             color: #fff;
+            width: 140px;
           }
         }
       }
 
       .downloadButton {
-        position: relative;
-        height: 45px;
-        border-radius: 50px;
         width: 250px;
-        background-color: $secondaryTextColor;
-        text-transform: uppercase;
-        font-family: $primaryFont;
-        font-size: 15px;
-        line-height: 46px;
-        font-weight: 500;
-        letter-spacing: .5px;
-        transition: .3s ease;
-
-        &:hover {
-          background-color: gray;
-        }
-
-        .iconBtn {
-          position: absolute;
-          left: 35px;
-        }
-
-        .link {
-          position: absolute;
-          left: 20px;
-          color: #fff;
-          height: 100%;
-          width: 100%;
-        }
       }
     }
   }
@@ -111,15 +121,15 @@
     display: flex;
     justify-content: space-between;
 
-    & h2 {
-      text-align: left;
-      color: #fff;
-      font-size: 23px;
-      font-family: $primaryFont;
-      font-weight: 600;
-      text-transform: uppercase;
-      line-height: 1.2;
-      margin-bottom: 50px;
+    @media (max-width: 1025px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin-left: 10px;
+    }
+
+    .chapterTitle {
+      @include chapterTitle
     }
 
     .blockExp {
@@ -141,21 +151,15 @@
 
   .skills {
     margin: 50px 0;
-    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
 
-    & h2 {
-      text-align: left;
-      color: #fff;
-      font-size: 23px;
-      font-family: $primaryFont;
-      font-weight: 600;
-      text-transform: uppercase;
-      line-height: 1.2;
-      margin-bottom: 50px;
+    @media (max-width: 1025px) {
+      align-items: center;
     }
 
-    .skillsWrapper {
-
+    .chapterTitle {
+      @include chapterTitle
     }
   }
 }

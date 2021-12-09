@@ -8,7 +8,7 @@ type PropsType = {
 export const Skills = ({skills}: PropsType) => {
     const skillList = skills.map(skill => {
         return (
-            <div className={s.skill}>{skill}</div>
+            <div key={skill} className={s.skill}>{skill}</div>
         );
     })
 

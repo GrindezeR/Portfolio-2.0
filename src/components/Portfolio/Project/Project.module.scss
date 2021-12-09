@@ -1,0 +1,52 @@
+@import '../../../common/styles/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+
+  .photo {
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .watchBtn {
+      width: 160px;
+      border-radius: 5px;
+
+      .iconBtn {
+        left: 25px;
+      }
+
+      .link {
+        left: 10px;
+      }
+    }
+  }
+
+  .textWrapper {
+    padding: 10px;
+    background-color: #555555;
+    color: white;
+    border-radius: 0 0 10px 10px;
+
+    .title {
+      font-family: $primaryFont;
+      font-size: 18px;
+      text-shadow: 1px 1px 1px $secondaryTextColor;
+    }
+
+    .description {
+      text-align: left;
+      font-family: $secondaryFont;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+}
+

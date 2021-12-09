@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Contacts.module.scss';
 import {data} from '../../common/data/data';
-import sc from '../../common/styles/common.module.css';
+import sc from '../../common/styles/common.module.scss';
 import {Title} from "../Title/Title";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
@@ -14,10 +14,17 @@ import {faDiscord} from "@fortawesome/free-brands-svg-icons/faDiscord";
 import {faDove} from "@fortawesome/free-solid-svg-icons/faDove";
 import {faComments} from "@fortawesome/free-solid-svg-icons/faComments";
 import {faUser} from "@fortawesome/free-solid-svg-icons/faUser";
+import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
 
-export const Contacts = () => {
+type PropsType = {
+    homeCallback: () => void
+}
+
+
+export const Contacts = ({homeCallback}: PropsType) => {
     return (
         <div className={sc.container}>
+            <HomeButton onClickHomeHandler={homeCallback}/>
             <div className={s.wrapper}>
                 <Title title={'GET'}
                        specialText={'IN TOUCH'}
@@ -38,7 +45,6 @@ export const Contacts = () => {
                                 {data.about.email}
                             </div>
                         </div>
-
                         <div className={s.dataContainer}>
                             <div className={s.titleText}>Telegram</div>
                             <div className={s.data}>
@@ -46,7 +52,6 @@ export const Contacts = () => {
                                 <a href={data.about.telegram} rel={'noreferrer'} target={'_blank'}>GrindezeR</a>
                             </div>
                         </div>
-
                         <div className={s.dataContainer}>
                             <div className={s.titleText}>Social Profiles</div>
                             <div className={s.socialIconsWrapper}>
@@ -65,7 +70,6 @@ export const Contacts = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className={s.rightBlock}>
                         <div className={s.information}>
                             <p>
@@ -74,12 +78,16 @@ export const Contacts = () => {
                                 please fill out the form below and I will reply you shortly.
                             </p>
                         </div>
-                        <form className={s.contactForm}>
+                        <div className={s.contactForm}>
                             <div className={s.inputsWrapper}>
-                                <FontAwesomeIcon className={s.inputNameIcon} icon={faUser} color={'gray'}/>
-                                <input className={`${s.name} ${s.inputs}`} placeholder={'YOUR NAME'} type="text"/>
-                                <FontAwesomeIcon className={s.inputEmailIcon} icon={faEnvelope} color={'gray'}/>
-                                <input className={`${s.email} ${s.inputs}`} placeholder={'YOUR EMAIL'} type="text"/>
+                                <div className={s.inputContainer}>
+                                    <FontAwesomeIcon className={s.inputsIcons} icon={faUser} color={'gray'}/>
+                                    <input className={`${s.name} ${s.inputs}`} placeholder={'YOUR NAME'} type="text"/>
+                                </div>
+                                <div className={s.inputContainer}>
+                                    <FontAwesomeIcon className={s.inputsIcons} icon={faEnvelope} color={'gray'}/>
+                                    <input className={`${s.email} ${s.inputs}`} placeholder={'YOUR EMAIL'} type="text"/>
+                                </div>
                             </div>
 
                             <div className={s.textAreaWrapper}>
@@ -95,7 +103,7 @@ export const Contacts = () => {
                                     <a className={s.link} rel={'noreferrer'} href="/">Send message</a>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

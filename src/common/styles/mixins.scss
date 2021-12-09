@@ -19,4 +19,24 @@
   height: 2px;
   top: 11px;
   width: 30px;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+
+@mixin chapterTitle {
+  text-align: left;
+  color: #fff;
+  font-size: 23px;
+  font-family: $primaryFont;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 50px;
+
+  @media (max-width: 1025px) {
+    text-align: center;
+  }
+
 }

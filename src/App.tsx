@@ -44,20 +44,20 @@ function App() {
                     <Menu homeCallback={onClickHomeHandler}
                           aboutCallback={onClickAboutHandler}
                           contactsCallback={onClickContactsHandler}
-                          portfolioCallback={onClickPortfolioHandler}
-                    />
+                          portfolioCallback={onClickPortfolioHandler}/>
                 </div>
+
 
                 <Home/>
 
                 <div className={`${s.page} ${about}`}>
-                    <About/>
+                    <About homeCallback={onClickHomeHandler}/>
                 </div>
                 <div className={`${s.page} ${contacts}`}>
-                    <Contacts/>
+                    <Contacts homeCallback={onClickHomeHandler}/>
                 </div>
                 <div className={`${s.page} ${portfolio}`}>
-                    <Portfolio/>
+                    <Portfolio homeCallback={onClickHomeHandler}/>
                 </div>
             </div>
         </div>

@@ -3,7 +3,18 @@
 .about_wrapper {
   position: relative;
   min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
   width: 100%;
+
+  @media (max-width: 1025px) {
+    display: none;
+  }
 
   &:before {
     content: '';
@@ -19,11 +30,16 @@
 
   .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     align-items: center;
+    width: 60%;
     margin: 0 300px;
     gap: 50px;
     z-index: 1;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
 
     .photoContainer {
       max-width: 550px;
@@ -46,21 +62,25 @@
       .greetings {
         font-weight: 500;
         font-size: 19px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $secondaryFont;
       }
 
       .nameContainer {
+        gap: 20px;
+        justify-content: center;
         font-size: 42px;
         line-height: 42px;
         margin: 19px 0 10px;
         text-transform: uppercase;
-        font-family: $primaryFont;
-        font-weight: 700;
-        word-spacing: 15px;
+        font-family: $secondaryFont;
+        font-weight: bold;
+
+        @media (min-width: 1025px) and (max-width: 1250px) {
+          min-width: 410px;
+        }
 
         .myName {
           color: $secondaryTextColor;
-
         }
       }
 

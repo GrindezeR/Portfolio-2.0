@@ -1,0 +1,26 @@
+@import '../../../common/styles/variables';
+
+.homeBtn {
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  color: white;
+  border-radius: 50%;
+  background-color: $secondaryTextColor;
+  padding: 45px 0 0 30px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  z-index: 10;
+  //border: 1px solid white;
+
+  @media (min-width: 1026px) {
+    display: none;
+  }
+
+  .homeIconMobile{
+    color: white;
+    height: 25px;
+    width: 25px;
+  }
+}

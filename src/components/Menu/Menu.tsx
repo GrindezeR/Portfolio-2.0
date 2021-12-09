@@ -33,51 +33,74 @@ export const Menu = ({homeCallback, aboutCallback, contactsCallback, portfolioCa
 
     const onBlurContainer = () => {
         if (change === s.change) {
-            openContainer();
+            // openContainer();
         }
     }
 
     return (
-        <div className={`${s.container} ${change}`}
-             onClick={openContainer}
-             onBlur={onBlurContainer}
-             tabIndex={0}>
+        <>
+            <div className={`${s.container} ${change}`}
+                 onClick={openContainer}
+                 onBlur={onBlurContainer}
+                 tabIndex={0}>
 
-            <div className={s.line1}/>
-            <div className={s.line2}/>
-            <div className={s.line3}/>
+                <div className={s.line1}/>
+                <div className={s.line2}/>
+                <div className={s.line3}/>
 
-            <ul className={`${s.menuWrapper} ${show}`}>
-                <span onClick={homeCallback} className={`${s.home} ${showNav}`}>Home</span>
-                <span onClick={aboutCallback} className={`${s.about} ${showNav}`}>About</span>
-                <span onClick={contactsCallback} className={`${s.contacts} ${showNav}`}>Contacts</span>
-                <span onClick={portfolioCallback} className={`${s.portfolio} ${showNav}`}>Portfolio</span>
+                <ul className={`${s.menuWrapper} ${show}`}>
+                    <span onClick={homeCallback} className={`${s.home} ${showNav}`}>Home</span>
+                    <span onClick={aboutCallback} className={`${s.about} ${showNav}`}>About</span>
+                    <span onClick={contactsCallback} className={`${s.contacts} ${showNav}`}>Contacts</span>
+                    <span onClick={portfolioCallback} className={`${s.portfolio} ${showNav}`}>Portfolio</span>
 
-                <li className={s.homeIconWrapper}>
-                    <FontAwesomeIcon onClick={homeCallback}
-                                     className={s.menuIcon}
-                                     icon={faHome}
-                                     color={'darkgray'}/>
-                </li>
-                <li className={s.skillsIconWrapper}>
-                    <FontAwesomeIcon onClick={aboutCallback}
-                                     className={s.menuIcon}
+                    <li className={s.homeIconWrapper}>
+                        <FontAwesomeIcon onClick={homeCallback}
+                                         className={s.menuIcon}
+                                         icon={faHome}
+                                         color={'darkgray'}/>
+                    </li>
+                    <li className={s.skillsIconWrapper}>
+                        <FontAwesomeIcon onClick={aboutCallback}
+                                         className={s.menuIcon}
+                                         icon={faUser}
+                                         color={'darkgray'}/>
+                    </li>
+                    <li className={s.contactsIconWrapper}>
+                        <FontAwesomeIcon onClick={contactsCallback}
+                                         className={s.menuIcon}
+                                         icon={faComment}
+                                         color={'darkgray'}/>
+                    </li>
+                    <li className={s.portfolioIconWrapper}>
+                        <FontAwesomeIcon onClick={portfolioCallback}
+                                         className={s.menuIcon}
+                                         icon={faSuitcase}
+                                         color={'darkgray'}/>
+                    </li>
+                </ul>
+            </div>
+
+            <div className={s.mobileMenu}>
+                <div className={s.menuItems} onClick={aboutCallback}>
+                    <FontAwesomeIcon className={s.menuItemIconMobile}
                                      icon={faUser}
-                                     color={'darkgray'}/>
-                </li>
-                <li className={s.contactsIconWrapper}>
-                    <FontAwesomeIcon onClick={contactsCallback}
-                                     className={s.menuIcon}
+                                     color={'#2196F3'}/>
+                    <span className={s.title}>About</span>
+                </div>
+                <div className={s.menuItems} onClick={contactsCallback}>
+                    <FontAwesomeIcon className={s.menuItemIconMobile}
                                      icon={faComment}
-                                     color={'darkgray'}/>
-                </li>
-                <li className={s.portfolioIconWrapper}>
-                    <FontAwesomeIcon onClick={contactsCallback}
-                                     className={s.menuIcon}
+                                     color={'#2196F3'}/>
+                    <span className={s.title}>Contacts</span>
+                </div>
+                <div className={s.menuItems} onClick={portfolioCallback}>
+                    <FontAwesomeIcon className={s.menuItemIconMobile}
                                      icon={faSuitcase}
-                                     color={'darkgray'}/>
-                </li>
-            </ul>
-        </div>
+                                     color={'#2196F3'}/>
+                    <span className={s.title}>Portfolio</span>
+                </div>
+            </div>
+        </>
     );
 }

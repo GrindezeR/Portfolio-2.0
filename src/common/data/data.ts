@@ -17,7 +17,7 @@ export const data = {
             years: '2017 - 2019',
             position: 'WEB DESIGNER',
             company: 'ENVATO',
-            about: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.',
+            about: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.',
         },
         work2: {
             years: '2014 - 2017',
