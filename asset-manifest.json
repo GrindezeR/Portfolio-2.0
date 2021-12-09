@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Partfolio-2.0/static/css/main.a5805678.chunk.css",
+    "main.js": "/Partfolio-2.0/static/js/main.a02eca27.chunk.js",
+    "main.js.map": "/Partfolio-2.0/static/js/main.a02eca27.chunk.js.map",
+    "runtime-main.js": "/Partfolio-2.0/static/js/runtime-main.75d53a2d.js",
+    "runtime-main.js.map": "/Partfolio-2.0/static/js/runtime-main.75d53a2d.js.map",
+    "static/js/2.0dd6c09e.chunk.js": "/Partfolio-2.0/static/js/2.0dd6c09e.chunk.js",
+    "static/js/2.0dd6c09e.chunk.js.map": "/Partfolio-2.0/static/js/2.0dd6c09e.chunk.js.map",
+    "static/js/3.36dbf95f.chunk.js": "/Partfolio-2.0/static/js/3.36dbf95f.chunk.js",
+    "static/js/3.36dbf95f.chunk.js.map": "/Partfolio-2.0/static/js/3.36dbf95f.chunk.js.map",
+    "index.html": "/Partfolio-2.0/index.html",
+    "static/css/main.a5805678.chunk.css.map": "/Partfolio-2.0/static/css/main.a5805678.chunk.css.map",
+    "static/js/2.0dd6c09e.chunk.js.LICENSE.txt": "/Partfolio-2.0/static/js/2.0dd6c09e.chunk.js.LICENSE.txt",
+    "static/media/Home.module.scss": "/Partfolio-2.0/static/media/time_photo.5df19797.jpg",
+    "static/media/calendarIcon.2e97e30e.png": "/Partfolio-2.0/static/media/calendarIcon.2e97e30e.png",
+    "static/media/socialNetwork.8ba31ec3.jpg": "/Partfolio-2.0/static/media/socialNetwork.8ba31ec3.jpg",
+    "static/media/todolist.b0002077.jpg": "/Partfolio-2.0/static/media/todolist.b0002077.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75d53a2d.js",
+    "static/js/2.0dd6c09e.chunk.js",
+    "static/css/main.a5805678.chunk.css",
+    "static/js/main.a02eca27.chunk.js"
+  ]
+}
