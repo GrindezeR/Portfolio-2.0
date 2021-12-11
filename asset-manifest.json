@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio-2.0/static/css/main.f08c5bd5.chunk.css",
-    "main.js": "/Portfolio-2.0/static/js/main.59f831c8.chunk.js",
-    "main.js.map": "/Portfolio-2.0/static/js/main.59f831c8.chunk.js.map",
-    "runtime-main.js": "/Portfolio-2.0/static/js/runtime-main.bdde1ee6.js",
-    "runtime-main.js.map": "/Portfolio-2.0/static/js/runtime-main.bdde1ee6.js.map",
-    "static/js/2.b99e9fae.chunk.js": "/Portfolio-2.0/static/js/2.b99e9fae.chunk.js",
-    "static/js/2.b99e9fae.chunk.js.map": "/Portfolio-2.0/static/js/2.b99e9fae.chunk.js.map",
-    "static/js/3.d2ccf021.chunk.js": "/Portfolio-2.0/static/js/3.d2ccf021.chunk.js",
-    "static/js/3.d2ccf021.chunk.js.map": "/Portfolio-2.0/static/js/3.d2ccf021.chunk.js.map",
+    "main.css": "/Portfolio-2.0/static/css/main.4c7671d0.chunk.css",
+    "main.js": "/Portfolio-2.0/static/js/main.4ab4cd29.chunk.js",
+    "main.js.map": "/Portfolio-2.0/static/js/main.4ab4cd29.chunk.js.map",
+    "runtime-main.js": "/Portfolio-2.0/static/js/runtime-main.d6888d87.js",
+    "runtime-main.js.map": "/Portfolio-2.0/static/js/runtime-main.d6888d87.js.map",
+    "static/js/2.6436e716.chunk.js": "/Portfolio-2.0/static/js/2.6436e716.chunk.js",
+    "static/js/2.6436e716.chunk.js.map": "/Portfolio-2.0/static/js/2.6436e716.chunk.js.map",
+    "static/js/3.78388632.chunk.js": "/Portfolio-2.0/static/js/3.78388632.chunk.js",
+    "static/js/3.78388632.chunk.js.map": "/Portfolio-2.0/static/js/3.78388632.chunk.js.map",
     "index.html": "/Portfolio-2.0/index.html",
-    "static/css/main.f08c5bd5.chunk.css.map": "/Portfolio-2.0/static/css/main.f08c5bd5.chunk.css.map",
-    "static/js/2.b99e9fae.chunk.js.LICENSE.txt": "/Portfolio-2.0/static/js/2.b99e9fae.chunk.js.LICENSE.txt",
+    "static/css/main.4c7671d0.chunk.css.map": "/Portfolio-2.0/static/css/main.4c7671d0.chunk.css.map",
+    "static/js/2.6436e716.chunk.js.LICENSE.txt": "/Portfolio-2.0/static/js/2.6436e716.chunk.js.LICENSE.txt",
     "static/media/Home.module.scss": "/Portfolio-2.0/static/media/my_photo.9a60b45e.jpg",
     "static/media/calendarIcon.2e97e30e.png": "/Portfolio-2.0/static/media/calendarIcon.2e97e30e.png",
     "static/media/socialNetwork.8ba31ec3.jpg": "/Portfolio-2.0/static/media/socialNetwork.8ba31ec3.jpg",
     "static/media/todolist.b0002077.jpg": "/Portfolio-2.0/static/media/todolist.b0002077.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bdde1ee6.js",
-    "static/js/2.b99e9fae.chunk.js",
-    "static/css/main.f08c5bd5.chunk.css",
-    "static/js/main.59f831c8.chunk.js"
+    "static/js/runtime-main.d6888d87.js",
+    "static/js/2.6436e716.chunk.js",
+    "static/css/main.4c7671d0.chunk.css",
+    "static/js/main.4ab4cd29.chunk.js"
   ]
 }
