@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Contacts.module.scss';
 import {data} from '../../common/data/data';
-import sc from '../../common/styles/common.module.scss';
+import sc from '../../common/styles/Common.module.scss';
 import {Title} from "../Title/Title";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
@@ -11,10 +11,8 @@ import {faVk} from "@fortawesome/free-brands-svg-icons/faVk";
 import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faDiscord} from "@fortawesome/free-brands-svg-icons/faDiscord";
-import {faDove} from "@fortawesome/free-solid-svg-icons/faDove";
-import {faComments} from "@fortawesome/free-solid-svg-icons/faComments";
-import {faUser} from "@fortawesome/free-solid-svg-icons/faUser";
 import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
+import {Form} from "./Form/Form";
 
 type PropsType = {
     homeCallback: () => void
@@ -35,14 +33,14 @@ export const Contacts = ({homeCallback}: PropsType) => {
                             <div className={s.titleText}>Phone</div>
                             <div className={s.data}>
                                 <FontAwesomeIcon className={s.dataIcon} icon={faPhoneAlt} color={'#2196F3'}/>
-                                {data.about.phone}
+                                <a href={`tel:${data.about.phone}`}>{data.about.phone}</a>
                             </div>
                         </div>
                         <div className={s.dataContainer}>
                             <div className={s.titleText}>Email</div>
                             <div className={s.data}>
                                 <FontAwesomeIcon className={s.dataIcon} icon={faEnvelope} color={'#2196F3'}/>
-                                {data.about.email}
+                                <a href={`mailto:${data.about.email}`}>{data.about.email}</a>
                             </div>
                         </div>
                         <div className={s.dataContainer}>
@@ -78,32 +76,7 @@ export const Contacts = ({homeCallback}: PropsType) => {
                                 please fill out the form below and I will reply you shortly.
                             </p>
                         </div>
-                        <div className={s.contactForm}>
-                            <div className={s.inputsWrapper}>
-                                <div className={s.inputContainer}>
-                                    <FontAwesomeIcon className={s.inputsIcons} icon={faUser} color={'gray'}/>
-                                    <input className={`${s.name} ${s.inputs}`} placeholder={'YOUR NAME'} type="text"/>
-                                </div>
-                                <div className={s.inputContainer}>
-                                    <FontAwesomeIcon className={s.inputsIcons} icon={faEnvelope} color={'gray'}/>
-                                    <input className={`${s.email} ${s.inputs}`} placeholder={'YOUR EMAIL'} type="text"/>
-                                </div>
-                            </div>
-
-                            <div className={s.textAreaWrapper}>
-                                <FontAwesomeIcon className={s.textAreaIcon} icon={faComments} color={'gray'}/>
-                                <textarea className={s.textArea} placeholder={'YOUR MESSAGE'} required/>
-                            </div>
-
-                            <div className={s.btnWrapper}>
-                                <div className={s.btn}>
-                                    <div className={s.iconBtn}>
-                                        <FontAwesomeIcon icon={faDove}/>
-                                    </div>
-                                    <a className={s.link} rel={'noreferrer'} href="/">Send message</a>
-                                </div>
-                            </div>
-                        </div>
+                        <Form/>
                     </div>
                 </div>
             </div>

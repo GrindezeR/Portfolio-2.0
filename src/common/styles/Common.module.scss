@@ -1,0 +1,12 @@
+@import './variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  /*border: 1px solid red;*/
+}

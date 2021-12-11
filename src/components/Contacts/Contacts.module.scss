@@ -51,10 +51,10 @@
             border: 1px solid $secondaryTextColor;
             border-radius: 50%;
             padding: 5px;
-            transition: 1s ease;
+            transition: .5s;
 
             &:hover {
-              transform: rotateY(360deg);
+              //transform: rotateY(360deg);
               background-color: #fff;
             }
           }
@@ -100,123 +100,6 @@
         font-family: $secondaryFont;
         font-size: 16px;
         line-height: 32px;
-      }
-
-      .contactForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0;
-        width: 100%;
-
-        .inputsWrapper {
-          display: flex;
-          gap: 40px;
-          margin-bottom: 30px;
-          width: 100%;
-
-          @media (max-width: 1025px) {
-            flex-direction: column;
-            gap: 5px;
-            margin-bottom: 10px;
-          }
-
-          .inputContainer {
-            width: 100%;
-            position: relative;
-
-            .inputsIcons {
-              position: absolute;
-              left: 15px;
-              top: 14px;
-            }
-          }
-        }
-
-        .inputs {
-          outline: none;
-          background-color: #333;
-          border: 1px solid #444;
-          color: #fff;
-          height: 46px;
-          font-family: $secondaryFont;
-          font-size: 16px;
-          border-radius: 30px;
-          line-height: 1.5;
-          width: 100%;
-          padding: 0.375px 35px;
-        }
-
-        .textAreaWrapper {
-          width: 100%;
-          position: relative;
-
-          .textAreaIcon {
-            position: absolute;
-            top: 15px;
-            left: 20px;
-          }
-
-          .textArea {
-            border: 1px solid #444;
-            outline: none;
-            background-color: #333;
-            color: #fff;
-            font-family: $secondaryFont;
-            font-size: 16px;
-            border-radius: 30px;
-            min-height: 210px;
-            display: block;
-            width: 100%;
-            padding: 12px 25px 15px 49px;
-            resize: vertical;
-          }
-        }
-
-
-        .btnWrapper {
-          display: flex;
-          align-self: flex-end;
-
-          @media (max-width: 1025px) {
-            align-self: center;
-          }
-
-          .btn {
-            display: flex;
-            position: relative;
-            height: 45px;
-            border-radius: 50px;
-            width: 215px;
-            background-color: $secondaryTextColor;
-            text-transform: uppercase;
-            font-family: $primaryFont;
-            font-size: 15px;
-            line-height: 46px;
-            font-weight: 500;
-            letter-spacing: .5px;
-            margin-top: 40px;
-            transition: .3s ease;
-
-            &:hover {
-              background-color: gray;
-            }
-
-            .iconBtn {
-              position: absolute;
-              left: 35px;
-            }
-
-            .link {
-              position: absolute;
-              left: 20px;
-              color: #fff;
-              height: 100%;
-              width: 100%;
-            }
-          }
-        }
-
       }
     }
   }

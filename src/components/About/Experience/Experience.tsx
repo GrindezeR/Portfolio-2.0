@@ -1,5 +1,5 @@
 import React from "react";
-import s from './ExperienceElement.module.scss';
+import s from './Experience.module.scss';
 import icon from '../../../common/images/calendarIcon.png'
 
 type PropsType = {
@@ -17,7 +17,7 @@ type PropsType = {
     }
 }
 
-export const ExperienceElement = ({work, educations}: PropsType) => {
+export const Experience = ({work, educations}: PropsType) => {
 
     return (
         <div className={s.block}>

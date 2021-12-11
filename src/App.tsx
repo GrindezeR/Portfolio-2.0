@@ -45,7 +45,7 @@ function App() {
                 </div>
 
 
-                <Home/>
+                <Home aboutCallback={onClickAboutHandler}/>
 
                 <div className={`${s.page} ${about}`}>
                     <About homeCallback={onClickHomeHandler}/>

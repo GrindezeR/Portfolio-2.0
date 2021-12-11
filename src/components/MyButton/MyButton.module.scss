@@ -1,0 +1,50 @@
+@import '../../common/styles/variables';
+
+
+.btn {
+  display: flex;
+  position: relative;
+  height: 45px;
+  width: 215px;
+  background-color: $secondaryTextColor;
+  border-radius: 50px;
+  text-transform: uppercase;
+  line-height: 46px;
+  transition: .3s ease;
+
+  &:hover {
+    color: black;
+  }
+
+  .iconBtn {
+    position: absolute;
+    left: 15%;
+  }
+
+  .send, .disabled {
+    border-radius: 50px;
+    border: none;
+    padding-left: 10%;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 15px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+  }
+
+  .send {
+    &:hover {
+      color: black;
+      background-color: greenyellow;
+    }
+  }
+
+  .disabled {
+    opacity: .8;
+    background-color: #555555;
+    cursor: default;
+  }
+}
