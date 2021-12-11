@@ -18,17 +18,17 @@ export const Form = () => {
     const onChangeNameHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setSuccess(false);
         setError(false);
-        setName(e.currentTarget.value.trim());
+        setName(e.currentTarget.value);
     }
     const onChangeEmailHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setSuccess(false);
         setError(false);
-        setEmail(e.currentTarget.value.trim());
+        setEmail(e.currentTarget.value);
     }
     const onChangeMessageHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
         setSuccess(false);
         setError(false);
-        setMessage(e.currentTarget.value.trim());
+        setMessage(e.currentTarget.value);
     }
 
     const sendEmail = (e: ChangeEvent<HTMLFormElement>) => {
