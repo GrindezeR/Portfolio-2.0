@@ -15,6 +15,22 @@ export const Form = () => {
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
 
+    const onChangeNameHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        setSuccess(false);
+        setError(false);
+        setName(e.currentTarget.value.trim());
+    }
+    const onChangeEmailHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        setSuccess(false);
+        setError(false);
+        setEmail(e.currentTarget.value.trim());
+    }
+    const onChangeMessageHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
+        setSuccess(false);
+        setError(false);
+        setMessage(e.currentTarget.value.trim());
+    }
+
     const sendEmail = (e: ChangeEvent<HTMLFormElement>) => {
         e.preventDefault();
         emailjs.send("service_ekulwai", "template_2evg773", {
@@ -30,6 +46,7 @@ export const Form = () => {
                 setSuccess(true);
             })
             .catch((error) => {
+                setSuccess(false);
                 setError(true);
             });
     };
@@ -39,12 +56,12 @@ export const Form = () => {
             <div className={s.inputsWrapper}>
                 <div className={s.inputContainer}>
                     <FontAwesomeIcon className={s.inputsIcons} icon={faUser} color={'gray'}/>
-                    <input value={name} onChange={(e) => setName(e.currentTarget.value)}
+                    <input value={name} onChange={onChangeNameHandler}
                            className={`${s.name} ${s.inputs}`} placeholder={'YOUR NAME'} type="text"/>
                 </div>
                 <div className={s.inputContainer}>
                     <FontAwesomeIcon className={s.inputsIcons} icon={faEnvelope} color={'gray'}/>
-                    <input value={email} onChange={(e) => setEmail(e.currentTarget.value)}
+                    <input value={email} onChange={onChangeEmailHandler}
                            className={`${s.email} ${s.inputs}`} placeholder={'YOUR EMAIL'} type="email"/>
                 </div>
             </div>
@@ -52,7 +69,7 @@ export const Form = () => {
             <div className={s.textAreaWrapper}>
                 <FontAwesomeIcon className={s.textAreaIcon} icon={faComments} color={'gray'}/>
                 <textarea value={message}
-                          onChange={(e) => setMessage(e.currentTarget.value)}
+                          onChange={onChangeMessageHandler}
                           className={s.textArea}
                           placeholder={'YOUR MESSAGE'}
                           required/>
