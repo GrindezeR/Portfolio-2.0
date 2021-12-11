@@ -102,7 +102,7 @@ export const About = ({homeCallback}: PropsType) => {
                             <div className={sc.iconBtn}>
                                 <FontAwesomeIcon icon={faDownload}/>
                             </div>
-                            <a className={sc.link} href={'../../common/data/CV_English.pdf'} download={'CV_English.pdf'}>
+                            <a className={sc.link} href={'/Portfolio-2.0/static/media/CV_English.pdf'} download={'CV_English.pdf'}>
                                 Download my CV
                             </a>
                         </div>
