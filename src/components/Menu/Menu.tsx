@@ -33,7 +33,7 @@ export const Menu = ({homeCallback, aboutCallback, contactsCallback, portfolioCa
 
     const onBlurContainer = () => {
         if (change === s.change) {
-            // openContainer();
+            openContainer();
         }
     }
 
