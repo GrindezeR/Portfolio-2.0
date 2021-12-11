@@ -1,52 +1,66 @@
 @import '../../../common/styles/variables';
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-
-  .photo {
-    border-radius: 10px 10px 0 0;
-    height: 300px;
+  .project {
+    position: relative;
+    border-radius: 10px;
+    min-height: 250px;
+    width: 400px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
-    .watchBtn {
-      width: 160px;
-      border-radius: 5px;
+    &:hover .information {
+      opacity: 1;
+    }
 
-      .iconBtn {
-        left: 25px;
+    .information {
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      transition: .5s ease;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      padding: 5px;
+      color: white;
+      background-color: $secondaryTextColor;
+
+      .dataBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 0 10px;
+
+        .dataTitle {
+          font-family: $primaryFont;
+          color: black;
+          margin-right: 5px;
+        }
+        .dataValue {
+          font-family: $primaryFont;
+          font-size: 14px;
+        }
       }
 
-      .link {
-        left: 10px;
+      .title {
+        font-size: 30px;
+        font-family: $primaryFont;
+      }
+
+      .links {
+        font-family: $primaryFont;
+        color: white;
+        text-decoration: underline;
+        opacity: .5;
+
+        &:hover {
+          color: white;
+          opacity: 1;
+        }
       }
     }
   }
-
-  .textWrapper {
-    padding: 10px;
-    background-color: #555555;
-    color: white;
-    border-radius: 0 0 10px 10px;
-
-    .title {
-      font-family: $primaryFont;
-      font-size: 18px;
-      text-shadow: 1px 1px 1px $secondaryTextColor;
-    }
-
-    .description {
-      text-align: left;
-      font-family: $secondaryFont;
-      font-weight: 400;
-      margin-top: 10px;
-    }
-  }
-}
 

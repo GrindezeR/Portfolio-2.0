@@ -59,11 +59,12 @@
       &.home, &.about, &.contacts, &.portfolio {
         left: 80px;
         transition: .5s ease;
-      }
 
-      &:hover {
-        color: $secondaryTextColor;
-        left: 85px;
+        &:hover {
+          color: $secondaryTextColor;
+          left: 85px;
+        }
+
       }
     }
 
@@ -73,6 +74,10 @@
   .home {
     top: 67px;
 
+    &:hover ~ .homeIconWrapper .menuIcon {
+      color: $secondaryTextColor;
+    }
+
     &:hover ~ .homeIconWrapper:after {
       @include menuLinesHover;
     }
@@ -80,6 +85,10 @@
 
   .about {
     top: 114px;
+
+    &:hover ~ .skillsIconWrapper .menuIcon {
+      color: $secondaryTextColor;
+    }
 
     &:hover ~ .skillsIconWrapper:after {
       @include menuLinesHover;
@@ -89,6 +98,10 @@
   .contacts {
     top: 160px;
 
+    &:hover ~ .contactsIconWrapper .menuIcon {
+      color: $secondaryTextColor;
+    }
+
     &:hover ~ .contactsIconWrapper:after {
       @include menuLinesHover;
     }
@@ -96,6 +109,10 @@
 
   .portfolio {
     top: 207px;
+
+    &:hover ~ .portfolioIconWrapper .menuIcon {
+      color: $secondaryTextColor;
+    }
 
     &:hover ~ .portfolioIconWrapper:after {
       @include menuLinesHover;

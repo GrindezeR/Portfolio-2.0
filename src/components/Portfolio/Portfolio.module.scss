@@ -1,28 +1,19 @@
 @import '../../common/styles/variables';
 
 .wrapper {
-  width: 75%;
-  //border: 1px solid white;
+  width: 100%;
 
   .projectsWrapper {
     display: flex;
+    width: 50%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px 0;
-    gap: 40px;
+    margin: 50px auto;
+    padding: 0 10px;
+    gap: 20px;
 
-    .projects {
-      height: 198px;
-      width: 350px;
-      transition: 1s ease;
-      cursor: pointer;
-      background: url('http://slimhamdi.net/istanbul/demos/img/projects/project-1.jpg') no-repeat center;
-      background-size: cover;
-
-      &:hover {
-        background-image: none;
-        background-color: $secondaryTextColor;
-      }
+    @media (max-width: 650px) {
+      width: 100%;
     }
   }
 }

@@ -7,7 +7,7 @@ export const data = {
         linkedIn: 'https://www.linkedin.com/in/stanislav-tsarkov-b9a0b3218/',
         discord: 'https://discordapp.com/users/8958',
         gitHub: 'https://github.com/GrindezeR',
-        city:'Saint-Petersburg',
+        city: 'Saint-Petersburg',
         codewars: 'https://www.codewars.com/users/GrindezeR',
         birthdate: '17 august 1993',
     },

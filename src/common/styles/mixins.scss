@@ -38,5 +38,11 @@
   @media (max-width: 1025px) {
     text-align: center;
   }
+}
 
+@mixin hoverIconMenu($parent) {
+  &:hover ~ .homeIconWrapper .menuIcon {
+    color: $secondaryTextColor;
+    left: 85px;
+  }
 }

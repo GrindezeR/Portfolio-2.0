@@ -23,7 +23,7 @@ export const About = ({homeCallback}: PropsType) => {
                        aboutText={'I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.'}/>
 
                 <div className={s.main}>
-                    <div className={s.myPhoto}/>
+                    <div className={s.myPhoto} />
                     <div className={s.aboutMe}>
                         <div className={s.dataList}>
                             <div className={s.dataBlock}>
@@ -102,7 +102,9 @@ export const About = ({homeCallback}: PropsType) => {
                             <div className={sc.iconBtn}>
                                 <FontAwesomeIcon icon={faDownload}/>
                             </div>
-                            <a className={sc.link} rel={'noreferrer'} href="/">Download my CV</a>
+                            <a className={sc.link} href={'../../common/data/CV_English.pdf'} download={'CV_English.pdf'}>
+                                Download my CV
+                            </a>
                         </div>
                     </div>
                 </div>

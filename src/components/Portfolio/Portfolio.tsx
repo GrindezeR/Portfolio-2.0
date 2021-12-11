@@ -23,15 +23,22 @@ export const Portfolio = ({homeCallback}: PropsType) => {
                 <div className={s.projectsWrapper}>
                     <Project
                         title={'Social Network'}
-                        link={'https://grindezer.github.io/todoList/'}
+                        links={{
+                            demo: 'https://grindezer.github.io/todoList/',
+                            source: 'https://github.com/GrindezeR/todoList'
+                        }}
+                        technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, Reselect, Formik, React-router, Storybook, SCSS,HTML, Git'}
                         background={socialBack}
                         description={'A project to build a social network with the ability to log in, search for users, create posts on the wall and much more (in progress)'}/>
                     <Project
                         title={'Todolist'}
-                        link={'https://grindezer.github.io/todoList/'}
+                        links={{
+                            demo: 'https://grindezer.github.io/todoList/',
+                            source: 'https://github.com/GrindezeR/todoList'
+                        }}
+                        technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, Reselect, Formik, React-router, Storybook, SCSS,HTML, Git'}
                         background={todolistBack}
                         description={'A project that allows you to maintain a to-do list and edit them, create independent lists under a connected account (in progress)'}/>
-
                 </div>
             </div>
         </div>

@@ -33,11 +33,13 @@
 
     &:before {
       @include aboutTitleLines;
+      margin-left: 10px;
       left: -50px;
     }
 
     &:after {
       @include aboutTitleLines;
+      margin-right: 10px;
       right: -50px;
     }
   }

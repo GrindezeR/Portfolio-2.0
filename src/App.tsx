@@ -11,7 +11,6 @@ function App() {
     let [contacts, setContacts] = useState('')
     let [portfolio, setPortfolio] = useState('')
 
-
     const onClickHomeHandler = () => {
         if (contacts || about || portfolio === s.show) {
             setContacts('');
@@ -19,8 +18,6 @@ function App() {
             setPortfolio('');
         }
     }
-
-
     const onClickAboutHandler = () => {
         setAbout(s.show);
         setContacts('');
