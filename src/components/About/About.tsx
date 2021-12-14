@@ -116,6 +116,7 @@ export const About = ({homeCallback}: PropsType) => {
                             <Experience work={data.works.work1}/>
                             <Experience work={data.works.work2}/>
                             <Experience work={data.works.work3}/>
+                            <Experience work={data.works.work4}/>
                         </div>
                     </div>
 

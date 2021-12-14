@@ -44,7 +44,6 @@ export const Experience = ({work, educations}: PropsType) => {
                     {educations && educations.about}
                 </p>
             </div>
-            {/*<span className={s.bulletEnd}/>*/}
         </div>
     );
 }
