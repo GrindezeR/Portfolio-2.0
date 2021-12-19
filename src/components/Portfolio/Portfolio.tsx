@@ -24,8 +24,8 @@ export const Portfolio = ({homeCallback}: PropsType) => {
                     <Project
                         title={'Social Network'}
                         links={{
-                            demo: 'https://grindezer.github.io/todoList/',
-                            source: 'https://github.com/GrindezeR/todoList'
+                            demo: 'https://grindezer.github.io/SocialNetwork/',
+                            source: 'https://github.com/GrindezeR/SocialNetwork'
                         }}
                         technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, Reselect, Formik, React-router-dom, SCSS, HTML, Git'}
                         background={socialBack}
