@@ -24,19 +24,16 @@
 
     .myPhoto {
       position: relative;
+      display: block;
       width: 40%;
       height: 440px;
+      object-fit: cover;
       background: url('../../common/images/my_photo.jpg') center no-repeat;
       background-size: cover;
 
       @media (max-width: 1290px) {
         width: 50%;
         height: 250px;
-      }
-
-      .photo {
-        width: 50%;
-        height: 440px;
       }
 
       &:before {

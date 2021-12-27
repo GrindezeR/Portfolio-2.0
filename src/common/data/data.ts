@@ -1,5 +1,8 @@
+import myPhoto from '../images/my_photo.jpg';
+
 export const data = {
     about: {
+        photo: myPhoto,
         phone: '+7 999 986 16 36',
         address: 'Russia, Saint-Petersburg',
         email: 'valariot@gmail.com',

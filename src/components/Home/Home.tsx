@@ -2,6 +2,7 @@ import React from "react";
 import s from './Home.module.scss';
 import {MyButton} from "../MyButton/MyButton";
 import {faUserTie} from "@fortawesome/free-solid-svg-icons/faUserTie";
+import {data} from '../../common/data/data';
 
 type PropsType = {
     aboutCallback: () => void
@@ -12,7 +13,7 @@ export const Home = ({aboutCallback}: PropsType) => {
         <div className={s.about_wrapper}>
             <div className={s.wrapper}>
                 <div className={s.photoContainer}>
-                    <div className={s.photo}/>
+                    <img className={s.photo} src={data.about.photo} alt={'myPhoto'}/>
                 </div>
                 <div className={s.textContainer}>
                     <div className={s.textWrapper}>
