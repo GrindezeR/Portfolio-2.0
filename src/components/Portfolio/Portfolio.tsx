@@ -6,6 +6,7 @@ import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
 import {Project} from "./Project/Project";
 import socialBack from '../../common/images/socialNetwork.jpg';
 import todolistBack from '../../common/images/todolist.jpg';
+import cardsBack from '../../common/images/cards.jpg'
 
 type PropsType = {
     homeCallback: () => void
@@ -39,6 +40,14 @@ export const Portfolio = ({homeCallback}: PropsType) => {
                         technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, Formik, React-router-dom, Storybook, SCSS, HTML, Git'}
                         background={todolistBack}
                         description={'A project that allows you to maintain a to-do list and edit them, create independent lists under a connected account (in progress)'}/>
+                    <Project title={'Cards'}
+                             description={'Application for learning something from cards and decks that you can create and replace. You can register, log in, restore password and etc.'}
+                             background={cardsBack}
+                             links={{
+                                 demo: 'https://grindezer.github.io/card-project',
+                                 source: 'https://github.com/GrindezeR/card-project',
+                             }}
+                             technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'}/>
                 </div>
             </div>
         </div>
