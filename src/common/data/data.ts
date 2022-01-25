@@ -1,4 +1,4 @@
-import myPhoto from '../images/my_photo.jpg';
+import myPhoto from '../images/my_photo.webp';
 
 export const data = {
     about: {

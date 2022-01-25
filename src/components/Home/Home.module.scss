@@ -3,7 +3,8 @@
 .about_wrapper {
   position: relative;
   min-height: 100vh;
-  background: url('../../common/images/background.jpg') no-repeat center center;
+  background: url('../../common/images/background.webp') no-repeat center center;
+  background-size: cover;
   display: flex;
   align-items: center;
   text-align: center;

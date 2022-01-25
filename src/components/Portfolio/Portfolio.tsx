@@ -4,9 +4,9 @@ import sc from '../../common/styles/Common.module.scss';
 import {Title} from "../Title/Title";
 import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
 import {Project} from "./Project/Project";
-import socialBack from '../../common/images/socialNetwork.jpg';
-import todolistBack from '../../common/images/todolist.jpg';
-import cardsBack from '../../common/images/cards.jpg'
+import socialBack from '../../common/images/socialNetwork.webp';
+import todolistBack from '../../common/images/todolist.webp';
+import cardsBack from '../../common/images/cards.webp'
 
 type PropsType = {
     homeCallback: () => void

@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Experience.module.scss';
-import icon from '../../../common/images/calendarIcon.png'
+import icon from '../../../common/images/calendarIcon.webp'
 
 type PropsType = {
     work?: {
