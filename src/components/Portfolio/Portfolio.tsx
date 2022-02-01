@@ -6,7 +6,8 @@ import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
 import {Project} from "./Project/Project";
 import socialBack from '../../common/images/socialNetwork.webp';
 import todolistBack from '../../common/images/todolist.webp';
-import cardsBack from '../../common/images/cards.webp'
+import cardsBack from '../../common/images/cards.webp';
+import filmsBack from '../../common/images/films.webp';
 
 type PropsType = {
     homeCallback: () => void
@@ -46,6 +47,14 @@ export const Portfolio = ({homeCallback}: PropsType) => {
                              links={{
                                  demo: 'https://grindezer.github.io/card-project',
                                  source: 'https://github.com/GrindezeR/card-project',
+                             }}
+                             technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'}/>
+                    <Project title={'Films'}
+                             description={'Application for searching films on english.'}
+                             background={filmsBack}
+                             links={{
+                                 demo: 'https://grindezer.github.io/Films',
+                                 source: 'https://github.com/GrindezeR/Films',
                              }}
                              technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'}/>
                 </div>
