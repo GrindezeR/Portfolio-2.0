@@ -1,6 +1,9 @@
 @import '../../common/styles/variables';
 
 .about_wrapper {
+  opacity: 0;
+  animation: fade .5s ease;
+  animation-fill-mode: forwards;
   position: relative;
   min-height: 100vh;
   background: url('../../common/images/background.webp') no-repeat center center;
@@ -12,6 +15,15 @@
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
+
+  @keyframes fade {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
 
   @media (max-width: 1025px) {
     display: none;
@@ -59,7 +71,7 @@
       font-family: $primaryFont;
       color: #eee;
 
-      .btnWrapper{
+      .btnWrapper {
         margin-top: 20px;
       }
 
