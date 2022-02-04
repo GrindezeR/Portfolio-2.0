@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-2.0/static/css/main.5b5d8ef2.css",
-    "main.js": "/Portfolio-2.0/static/js/main.2e69c72d.js",
+    "main.css": "/Portfolio-2.0/static/css/main.ea29bd0f.css",
+    "main.js": "/Portfolio-2.0/static/js/main.9c4fa449.js",
     "static/js/787.9b9c0edf.chunk.js": "/Portfolio-2.0/static/js/787.9b9c0edf.chunk.js",
     "static/media/background.webp": "/Portfolio-2.0/static/media/background.9f9b8f5da046dac700db.webp",
-    "static/media/films.webp": "/Portfolio-2.0/static/media/films.cc416d902d0e260b7a7d.webp",
+    "static/media/films.webp": "/Portfolio-2.0/static/media/films.36a9a2c999f46dee4eba.webp",
     "static/media/socialNetwork.webp": "/Portfolio-2.0/static/media/socialNetwork.e49c6ba3581ffeae7466.webp",
     "static/media/cards.webp": "/Portfolio-2.0/static/media/cards.f0364929c66c71f43aa2.webp",
     "static/media/my_photo.webp": "/Portfolio-2.0/static/media/my_photo.3a1216b5042f910ef051.webp",
     "static/media/todolist.webp": "/Portfolio-2.0/static/media/todolist.92e94402ff6c06654539.webp",
     "static/media/calendarIcon.webp": "/Portfolio-2.0/static/media/calendarIcon.e0d4bdaaf166e7190f9c.webp",
     "index.html": "/Portfolio-2.0/index.html",
-    "main.5b5d8ef2.css.map": "/Portfolio-2.0/static/css/main.5b5d8ef2.css.map",
-    "main.2e69c72d.js.map": "/Portfolio-2.0/static/js/main.2e69c72d.js.map",
+    "main.ea29bd0f.css.map": "/Portfolio-2.0/static/css/main.ea29bd0f.css.map",
+    "main.9c4fa449.js.map": "/Portfolio-2.0/static/js/main.9c4fa449.js.map",
     "787.9b9c0edf.chunk.js.map": "/Portfolio-2.0/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b5d8ef2.css",
-    "static/js/main.2e69c72d.js"
+    "static/css/main.ea29bd0f.css",
+    "static/js/main.9c4fa449.js"
   ]
 }
