@@ -1,9 +1,9 @@
 import React from "react";
 import s from './Portfolio.module.scss';
 import sc from '../../common/styles/Common.module.scss';
-import {Title} from "../Title/Title";
-import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
-import {Project} from "./Project/Project";
+import { Title } from "../Title/Title";
+import { HomeButton } from "../Home/HomeMobileButton/HomeButton";
+import { Project } from "./Project/Project";
 import socialBack from '../../common/images/socialNetwork.webp';
 import todolistBack from '../../common/images/todolist.webp';
 import cardsBack from '../../common/images/cards.webp';
@@ -13,14 +13,14 @@ type PropsType = {
     homeCallback: () => void
 }
 
-export const Portfolio = ({homeCallback}: PropsType) => {
+export const Portfolio = ({ homeCallback }: PropsType) => {
     return (
         <div className={sc.container}>
-            <HomeButton onClickHomeHandler={homeCallback}/>
+            <HomeButton onClickHomeHandler={homeCallback} />
             <div className={s.wrapper}>
                 <Title title={'MY'}
-                       specialText={'PORTFOLIO'}
-                       aboutText={'A FEW RECENT DESIGN AND CODING PROJECTS. WANT TO SEE MORE? EMAIL ME.'}/>
+                    specialText={'PORTFOLIO'}
+                    aboutText={'A FEW RECENT DESIGN AND CODING PROJECTS. WANT TO SEE MORE? EMAIL ME.'} />
 
                 <div className={s.projectsWrapper}>
                     <Project
@@ -31,7 +31,7 @@ export const Portfolio = ({homeCallback}: PropsType) => {
                         }}
                         technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, Reselect, Formik, React-router-dom, SCSS, HTML, Git'}
                         background={socialBack}
-                        description={'A project to build a social network with the ability to log in, search for users, create posts on the wall and much more (in progress)'}/>
+                        description={'A project to build a social network with the ability to log in, search for users, create posts on the wall and much more (in progress)'} />
                     <Project
                         title={'Todolist'}
                         links={{
@@ -40,23 +40,23 @@ export const Portfolio = ({homeCallback}: PropsType) => {
                         }}
                         technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, Formik, React-router-dom, Storybook, SCSS, HTML, Git'}
                         background={todolistBack}
-                        description={'A project that allows you to maintain a to-do list and edit them, create independent lists under a connected account (in progress)'}/>
+                        description={'A project that allows you to maintain a to-do list and edit them, create independent lists under a connected account (in progress)'} />
                     <Project title={'Cards'}
-                             description={'Application for learning something from cards and decks that you can create and replace. You can register, log in, restore password and etc.'}
-                             background={cardsBack}
-                             links={{
-                                 demo: 'https://grindezer.github.io/card-project',
-                                 source: 'https://github.com/GrindezeR/card-project',
-                             }}
-                             technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'}/>
+                        description={'Application for learning something from cards and decks that you can create and replace. You can register, log in, restore password and etc.'}
+                        background={cardsBack}
+                        links={{
+                            demo: 'https://grindezer.github.io/card-project',
+                            source: 'https://github.com/GrindezeR/card-project',
+                        }}
+                        technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'} />
                     <Project title={'Films'}
-                             description={'Application for searching films on english.'}
-                             background={filmsBack}
-                             links={{
-                                 demo: 'https://grindezer.github.io/Films',
-                                 source: 'https://github.com/GrindezeR/Films',
-                             }}
-                             technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'}/>
+                        description={'Application for searching films on english.'}
+                        background={filmsBack}
+                        links={{
+                            demo: 'https://grindezer.github.io/Films',
+                            source: 'https://github.com/GrindezeR/Films',
+                        }}
+                        technologies={'React, Redux, React-redux, TypeScript, Thunk, Axios, Rest API, React-router-dom'} />
                 </div>
             </div>
         </div>

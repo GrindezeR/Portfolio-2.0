@@ -1,29 +1,29 @@
 import React from "react";
 import s from './About.module.scss';
 import sc from '../../common/styles/Common.module.scss';
-import {Experience} from "./Experience/Experience";
-import {data} from '../../common/data/data';
-import {Title} from "../Title/Title";
-import {Skills} from "./Skill/Skills";
-import {faDownload} from "@fortawesome/free-solid-svg-icons/faDownload";
-import {HomeButton} from "../Home/HomeMobileButton/HomeButton";
-import {MyButton} from "../MyButton/MyButton";
+import { Experience } from "./Experience/Experience";
+import { data } from '../../common/data/data';
+import { Title } from "../Title/Title";
+import { Skills } from "./Skill/Skills";
+import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
+import { HomeButton } from "../Home/HomeMobileButton/HomeButton";
+import { MyButton } from "../MyButton/MyButton";
 
 type PropsType = {
     homeCallback: () => void
 }
 
-export const About = ({homeCallback}: PropsType) => {
+export const About = ({ homeCallback }: PropsType) => {
     return (
         <div className={sc.container}>
-            <HomeButton onClickHomeHandler={homeCallback}/>
+            <HomeButton onClickHomeHandler={homeCallback} />
             <div className={s.wrapper}>
                 <Title title={'ABOUT'}
-                       specialText={'ME'}
-                       aboutText={'I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.'}/>
+                    specialText={'ME'}
+                    aboutText={'I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.'} />
 
                 <div className={s.main}>
-                    <div className={s.myPhoto}/>
+                    <div className={s.myPhoto} />
                     <div className={s.aboutMe}>
                         <div className={s.dataList}>
                             <div className={s.dataBlock}>
@@ -101,38 +101,38 @@ export const About = ({homeCallback}: PropsType) => {
                         </div>
                         <div className={s.btnWrapper}>
                             <a href={'/Portfolio-2.0/CV_English.pdf'} download={'CV_English.pdf'}>
-                                <MyButton icon={faDownload} title={'Download CV'}/>
+                                <MyButton icon={faDownload} title={'Download CV'} />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <hr className={s.lineDelimiter}/>
+                <hr className={s.lineDelimiter} />
 
                 <div className={s.experience}>
                     <div className={s.blockExp}>
                         <h2 className={s.chapterTitle}>EXPERIENCE</h2>
                         <div className={s.works}>
-                            <Experience work={data.works.work1}/>
-                            <Experience work={data.works.work2}/>
-                            <Experience work={data.works.work3}/>
-                            <Experience work={data.works.work4}/>
+                            <Experience work={data.works.work1} />
+                            <Experience work={data.works.work2} />
+                            <Experience work={data.works.work3} />
+                            <Experience work={data.works.work4} />
                         </div>
                     </div>
 
                     <div className={s.blockExp}>
                         <h2 className={s.chapterTitle}>EDUCATION</h2>
                         <div className={s.works}>
-                            <Experience educations={data.education.edu1}/>
-                            <Experience educations={data.education.edu2}/>
-                            <Experience educations={data.education.edu3}/>
+                            <Experience educations={data.education.edu1} />
+                            <Experience educations={data.education.edu2} />
+                            <Experience educations={data.education.edu3} />
                         </div>
                     </div>
                 </div>
 
                 <div className={s.skills}>
                     <h2 className={s.chapterTitle}>SKILLS</h2>
-                    <Skills skills={data.skills}/>
+                    <Skills skills={data.skills} />
                 </div>
 
             </div>
