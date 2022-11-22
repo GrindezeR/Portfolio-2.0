@@ -100,7 +100,7 @@ export const About = ({ homeCallback }: PropsType) => {
                             </div>
                         </div>
                         <div className={s.btnWrapper}>
-                            <a href={'/Portfolio-2.0/CV_English.pdf'} download={'CV_English.pdf'}>
+                            <a href={'/Portfolio-2.0/CV.pdf'} download={'CV.pdf'}>
                                 <MyButton icon={faDownload} title={'Download CV'} />
                             </a>
                         </div>
