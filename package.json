@@ -15,13 +15,14 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "emailjs-com": "^3.2.0",
+    "gh-pages": "^3.2.3",
+    "nanoid": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
-    "typescript": "^4.4.2",
-    "emailjs-com": "^3.2.0",
-    "gh-pages": "^3.2.3",
     "sass": "^1.44.0",
+    "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
